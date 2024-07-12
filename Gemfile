@@ -44,9 +44,21 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# gem devise
+gem "devise"
+
+# gem devise-jwt
+gem "devise-jwt"
+
+# gem rack-cors
+gem "rack-cors"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  gem "rubocop", "~> 1.64", ">= 1.64.1"
+  gem "byebug", "~> 11.1", ">= 11.1.3"
+  gem "letter_opener"
 end
 
 group :development do
